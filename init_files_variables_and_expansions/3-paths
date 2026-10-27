@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$PATH" | tr ':' '\n' | awk 'NF {n++} END {print n}'
+echo "$PATH" | tr ':' '\n' | grep -c .
